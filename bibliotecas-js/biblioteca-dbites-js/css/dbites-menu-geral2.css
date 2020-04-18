@@ -1,0 +1,26 @@
+.iconeBar{width:16px;opacity:.4;vertical-align:middle}
+.dbites-menu{text-align:right;color:#fff;font-size:17px;font-family:Arial,Helvetica,sans-serif;height:auto;padding:5px;background:#5f3ca1}
+.dbites-menu div{display:inline-block;vertical-align:middle;height:auto}
+.dbites-menu div img{height:40px}
+.dbites-menu div:nth-child(1){width:20%;text-align:right}
+.dbites-menu div:nth-child(2){display:inline-block;width:80%;text-align:center}
+.dbites-menu div ul{padding:0;margin:0;list-style:none}
+.dbites-menu div ul li{display:inline-block;cursor:pointer;padding:10px;margin-left:3px;text-align:center;line-height:32px;transition:all .3s}
+.dbites-menu div ul li:hover{background-color:#6426b5}
+.dbites-menu div ul a{list-style:none;color:#fff;outline:0;text-decoration:none}
+.dbites-menu div ul li ul{display:none;position:absolute;margin-top:5px;margin-left:-10px;box-shadow:0 7px 10px rgba(0,0,0,.4)}
+.dbites-menu div ul li ul li{display:block;background-color:#6426b5;transition:all .3s}
+.dbites-menu div ul li ul li:hover{background-color:#47118d}
+.dbites-menu div ul li:hover>ul{background-color:#6426b5;display:block}
+.dbites-menu .mobile-menu{display:none;font-size:50px;cursor:pointer;outline:0;user-select:none;width:50px;height:50px;border-radius:100%;background-color:#6426b5;text-align:center;margin-top:-56px;line-height:50px}
+@media screen and (max-width:890px){
+.dbites-menu div{display:block}
+.dbites-menu div:nth-child(1){text-align:left;margin-left:3px;padding:10px}
+.dbites-menu div:nth-child(2){display:none;margin-top:20px}
+.dbites-menu div ul li{display:block;text-align:left}
+.dbites-menu .mobile-menu{display:block;position:absolute;right:20px}
+.dbites-menu .mobile-menu:hover .dbites-menu div:nth-child(2){display:block!important}
+}
+.dbites-menuBar{color:#b596de;height:auto;padding:5px;background-color:#4b2282;font-size:14px;font-family:Arial,Helvetica,sans-serif;text-align:right}
+.dbites-menuBar .container{display:block;padding-left:20px;padding-right:20px;text-align:right;margin:5px}
+.dbites-menuBar .container>div{display:inline;margin:3px;padding:5px}

@@ -1,0 +1,55 @@
+
+
+/* Templantes e alinhamentos. */
+
+/* Fim */
+
+/* Formularios e objetos */
+
+.dbites-form{width: 100%;padding: 0px;}.dbites-form input[type="text"],.dbites-form input[type="tel"],.dbites-form input[type="email"],.dbites-form input[type="number"]{width:calc(100% - 20px);height:40px;border:0;border-radius:6px;padding:5px;margin:0px;color:rgb(92, 92, 92);}
+.dbites-form ::placeholder{color: rgb(201, 201, 201);}.dbites-form textarea{width: calc(100% - 20px);border:0;padding:5px;margin:0px;border-radius:7px;height: 250px;}
+.dbites-form input[type="submit"]{transition:all 0.1s;cursor: pointer;outline: none;width:200px;height: 40px;border:1px solid rgb(224, 224, 224);border-radius:5px;font-family: Arial;font-weight:bold;background:linear-gradient(rgb(245, 245, 245),rgb(235, 235, 235));color:rgb(110, 110, 110);padding:5px;margin:5px;}
+
+.dbites-input-text{outline: none !important;width: 250px;height: 35px;border:0px solid rgba(0,0,0,0.1);border-radius: 4px;background-color: #FAFAFA;box-shadow: 0px 0px 5px inset rgba(0,0,0,0.1);padding: 5px;color: #808080;}
+.dbites-input-text:focus{box-shadow: 0px 0px 10px rgba(67,175,220,0.5);}
+.dbites-input-text-stretch{outline: none !important;width: 80vw;height: 35px;border:0px solid rgba(0,0,0,0.1);border-radius: 4px;background-color: #FAFAFA;box-shadow: 0px 0px 5px inset rgba(0,0,0,0.1);padding: 5px;color: #808080;}
+.dbites-input-text-stretch:focus{box-shadow: 0px 0px 10px rgba(67,175,220,0.5);}
+.dbites-input-text-border{outline: none !important;width: 250px;height: 30px;border:0;border-top:3px solid #D5105A;border-left:3px solid #3A9ED8;border-right:3px solid #7517B0;border-bottom:3px solid #FDAC39;border-radius: 4px;background-color: transparent;padding: 5px;color: #b6b6b6;}
+.dbites-input-text-border-bottom{outline: none !important;width: 250px;height: 30px;border:0;border-top:0px solid #D5105A;border-left:0px solid #3A9ED8;border-right:0px solid #7517B0;border-bottom:3px solid #FDAC39;border-radius: 2px;background-color: transparent;padding: 5px;color: #b6b6b6;}
+
+/* Fim */
+
+/* Tabelas personalizadas */
+
+.dbites-table{font-family: Arial;width: 100vw;border:1px solid #b3b3b3;border-spacing:0;border-collapse:collapse;color: #7A7A7A;}
+.dbites-table thead>tr>td{background-color: #efefef;color: #707070;font-weight: bold;padding: 5px;}
+.dbites-table tbody tr:nth-child(2n + 2){background-color: #f5f5f5;}
+.dbites-table tbody tr:hover{background-color: #E0F8FF;}
+.dbites-table tbody tr td{font-size: 14px;color: #707070;padding: 5px;}
+
+/* Fim */
+
+/* Botões personalizados */
+
+.dbites-bt{width: auto;height: 35px;background-color: #F7F7F7;border:0;border-radius: 5px 5px 5px 5px;color: #A8A8A8;outline: none !important;transition: all 0.1s;box-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+.dbites-bt:hover{background-color: #53A6E0;color: #fff;cursor: pointer;}
+.dbites-bt-purple{width: auto;height: 35px;background-color: rgb(106, 4, 146);border:0;border-radius: 5px 5px 5px 5px;color: #fff;outline: none !important;transition: all 0.1s;box-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+.dbites-bt-purple:hover{background-color: rgb(70, 2, 97);cursor: pointer;}
+.dbites-bt-orange{width: auto;height: 35px;background-color: rgb(255, 179, 64);border:0;border-radius: 5px 5px 5px 5px;color: #fff;outline: none !important;transition: all 0.1s;box-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+.dbites-bt-orange:hover{background-color: rgb(216, 137, 18);cursor: pointer;}
+.dbites-bt-red{width: auto;height: 35px;background-color: rgb(252, 55, 104);border:0;border-radius: 5px 5px 5px 5px;color: #fff;outline: none !important;transition: all 0.1s;box-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+.dbites-bt-red:hover{background-color: rgb(204, 21, 67);cursor: pointer;}
+.dbites-bt-green{width: auto;height: 35px;background-color: rgb(106, 185, 96);border:0;border-radius: 5px 5px 5px 5px;color: #fff;outline: none !important;transition: all 0.1s;box-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+.dbites-bt-green:hover{background-color: rgb(79, 161, 54);cursor: pointer;}
+.dbites-bt-gray{width: auto;height: 35px;background-color: rgb(184, 184, 184);border:0;border-radius: 5px 5px 5px 5px;color: rgb(255, 255, 255);outline: none !important;transition: all 0.1s;box-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+.dbites-bt-gray:hover{background-color: rgb(129, 129, 129);cursor: pointer;}
+.dbites-bt-blue{width: auto;height: 35px;background-color: rgb(133, 216, 255);border:0;border-radius: 5px 5px 5px 5px;color: rgb(255, 255, 255);outline: none !important;transition: all 0.1s;box-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+.dbites-bt-blue:hover{background-color: rgb(57, 144, 224);cursor: pointer;}
+
+/* Fim */
+
+/* Textarea personalizado */
+
+.dbites-textarea{outline: none !important;width: 80vw;height: 150px;padding: 10px;border:0;box-shadow: 0px 0px 5px inset rgba(0,0,0,0.3);border-radius: 5px;color: #707070;}
+
+/* Fim */

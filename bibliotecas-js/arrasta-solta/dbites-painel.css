@@ -1,0 +1,96 @@
+.dbites-menu{
+    position:fixed;width:18.8%;height:100vh;
+    background:linear-gradient(#f35782,#170505);
+    top: 0;left: 0;
+}
+.dbites-menu .titulo{
+    width: auto;
+    border: 0;
+    margin: 0px;
+    display: block !important;
+    background-color: #8601a7;
+    border-radius: 0;
+    text-align: left;
+}
+.dbites-menu .titulo input[type=text]{
+    height: 25px;
+    border: 0;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #ffffff;
+}
+.dbites-menu .titulo input[type=button]{
+    height: 35px;
+    width: 106px;
+    border: 0;
+    padding: 5px;
+    background-color: #bd22d8;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+}
+.dbites-menu > div{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.dbites-menu > div:hover{
+    width: 95%;
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.4);
+    border-right:5px solid #00f7ad;
+}
+.painel-right{
+    width: 81.5vw;
+    height: 100vh;
+    margin-left: 18%;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 0;
+}
+.dbites-menu-h{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 14px;
+    width: auto;
+    background-color: #8601a7;
+}
+.dbites-menu-h div{
+    display: inline-block;
+}
+.dbites-menu-h div:nth-child(1) img{
+    height: 50px;
+    padding: 10px;
+}
+.dbites-menu-h div:nth-child(1){
+    display: table-cell;
+    vertical-align: middle;
+}
+.dbites-menu-h div:nth-child(2){
+    display: table-cell;
+    vertical-align: middle;
+    width: 69vw;
+    text-align: right;
+}
+.dbites-menu-h div ul{
+    list-style: none;
+}
+.dbites-menu-h div ul li{
+    display: inline-block;
+    margin-left: 5px;
+    width: 120px;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dbites-menu-h div ul li:hover{
+    background-color: #7c0092;
+}

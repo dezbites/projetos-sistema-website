@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+}
+.dbites-cards{
+	font-family: Arial;
+	width: calc(100vw - 47px);
+	height: auto;
+	padding: 15px;
+}
+.dbites-cards>div{
+	display: block;
+	text-align: center;
+	width:100%; 
+}
+.dbites-cards>div div{
+	display: inline-block;
+	background-color: #fff;
+	padding: 15px;
+	margin: 10px;
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.1);
+	text-align: center;
+	border-radius: 8px;
+	max-width: 74%;
+	width: 220px;
+}
+.dbites-cards>div div h3{
+	font-size: 18px;
+	font-weight: 600;
+	font-family: Open Sans,sans-serif;
+}
+.dbites-cards>div div p{
+	font-size: 13px;
+	font-weight: 600;
+	font-family: Open Sans,sans-serif;
+}
+.dbites-cards>div div .bt{
+	background-color: #36adc2;
+	width: 100% !important;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+}

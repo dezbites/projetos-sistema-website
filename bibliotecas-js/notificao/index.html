@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="notificar();" />
+    <script>
+            
+
+            function notificar(){
+                if(window.Notification){
+                    if(Notification.permission=="denied"){
+                        Notification.requestPermission();
+                    }else{
+                        Notification.requestPermission(function(verifi){
+                            if(verifi === "granted"){
+                            // var notification = new Notification("Jonas gomes",{ body: "Jonas" });
+                    //notification.onshow = function() { setTimeout(notification.close, 15000) }
+                                
+                                var n = new Notification('Titulos',{
+                                    icon:"data:image/png;base64,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",
+                                    body:'Jonas teste'
+                                });
+                                n.onclick = function(){
+                                    window.open("https://valadarestranslado.com","blank");
+                                }
+                            }
+                        });
+                    }   
+                }
+            }  
+
+    </script>
+</body>
+</html>

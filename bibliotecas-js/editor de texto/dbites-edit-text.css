@@ -1,0 +1,119 @@
+
+        body{
+            margin: 0;
+        }
+        #editor{
+            width: auto;
+			height: 50vh;
+            background-color: #fbfbfb;
+            padding: 5px;
+            overflow-y:auto; 
+		}
+		.menu-edition{
+			width: auto;
+			padding: 5px;
+			background-color: #f3f3f3;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.menu-edition div{
+			display: inline-block;
+			width: 100px;
+			border: 0;
+		}
+		.menu-edition .person-select{
+			padding: 5px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: rgb(99, 99, 99);
+			border-radius: 3px;
+			width: 90px;
+			border: rgb(139, 139, 139);
+			font-weight: bold;
+		}
+		.menu-edition .edit-size input{
+			margin-left: -92px;
+			width: 60px;
+			border: 0;
+			padding-left: 5px;
+			font-weight: bold;
+			color: rgb(99, 99, 99);
+			outline: none;
+		}
+		.menu-edition .edit-letras{
+			font-weight:bold;
+			color: rgb(99, 99, 99);
+			width: auto;
+			cursor: pointer;
+		}
+		.menu-edition .edit-italico{
+			font-weight:bold;
+			color: rgb(99, 99, 99);
+		}
+		.menu-edition .edit-largura{
+			width: auto;
+		}
+		.menu-edition .edit-sublinhado{
+			font-weight:bold;
+			color: rgb(99, 99, 99);
+		}
+		.menu-edition .edit-organizar{
+			padding: 5px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.menu-edition .edit-paragrafo{
+			width: auto;
+			padding: 5px;
+		}
+		.menu-edition .edit-paragrafo-esquerda{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.menu-edition .edit-paragrafo-centro{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.menu-edition .edit-paragrafo-direita{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.menu-edition .edit-paragrafo-link{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.menu-edition .edit-letras button{
+			user-select: none;
+			outline: none;
+			width: 35px;
+			height: 35px;
+			background:transparent;
+			border: 0;
+			border-radius: 3px;
+			color: rgb(99, 99, 99);
+			cursor: pointer;
+			transition: all  0.4s;
+		}
+		.menu-edition .edit-letras button:hover{
+			width: 35px;
+			height: 35px;
+			background:#e8e8e8;
+			border: 0;
+			color: rgb(99, 99, 99);
+		}
+		#editor .div-line-block{
+			display: inline-block;
+			margin: 3px;
+			width: auto;
+		}
+		.cor{
+			position:fixed;z-index:9999;width:200px;height:250;background-color:#f0f0f0;
+			box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+			margin-top: -51vh;margin-left:11vw;border-radius:3px;
+			padding: 8px;
+		}
+		#cor button{
+			width: 25px;
+			border:1px solid #fff;
+		}
+		#cor button:hover{
+			border:1px solid #000;
+		}
