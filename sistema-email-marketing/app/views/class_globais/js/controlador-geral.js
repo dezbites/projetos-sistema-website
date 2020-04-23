@@ -107,6 +107,7 @@ function menu(){
                 lmenu     = lmenu.replace(" menu","");
                 if(this.getAttribute("data-menu") == lmenu ){
                     if( this.getAttribute("data-menu") === "home" ){
+                        tituloDash.innerHTML = secao;
                         chartsAreas();
                         area[t].style.display="grid";
                     }else{

@@ -60,15 +60,27 @@
             <span class="titulo">100%</span>
           </div>
           <div class="dbites-cell dbites-height">
-              Jonas
-              
+              Nenhum dado encontrado
           </div>
           <div class="dbites-cell dbites-height">
-              Gomes
+              Nenhum dado encontrado
           </div>
       </div>
       <div class="cadastrar-emails menu" data-secao="Cadastrar emails">
-          Cadastrar emails
+          <div class="arquivos">
+                <div>
+                    <input type="button" style="width:120px;" value=" novo email ">
+                    <input type="button" input-verde style="width:120px;" value=" importar emails ">
+                    <div align="center">
+                        <h1>
+                          Cadastrar emails
+                        </h1>
+                        <p>
+                          Selecione a forma que deseja cadastrar seus emails
+                        </p>
+                    </div>
+                </div>
+          </div>
       </div>
       <div class="enviar-emails menu" data-secao="Enviar emails">
           Enviar emails
