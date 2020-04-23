@@ -93,19 +93,27 @@ var grafic = (obj,endQt) =>{
 }
 
 //Cadastrar emails
-function area_setor(areainp,saidaout,verd){
-    const cadEmail = document.querySelectorAll(saidaout);
+function area_setor(areainp,saidaout,fun){
+      var cadEmail = document.querySelectorAll(saidaout);
     const btEmail  = document.querySelectorAll(areainp);
+    if(fun == undefined && fun == null ){ fun == ''; }
     for(i in btEmail){
         btEmail[i].onclick=function(){
-            for(t in cadEmail){
-                cadEmail[t].style.display = 
-                (cadEmail[t].getAttribute("area-setor") === this.getAttribute("area-setor") ? "block" : "none");
+            for(let t=0;t<cadEmail.length; t++){
+                if(cadEmail[t].getAttribute("area-setor") === this.getAttribute("area-setor")){
+                    cadEmail[t].style.display = "block";
+                }else{
+                    cadEmail[t].style.display = "none";
+                }
+            }
+
+            if(typeof fun == "function"){
+                fun();
             }
         }
     }
 }
-area_setor(".btemail",".emails-cad");
+
 
 //Menu
 function menu(){
@@ -139,5 +147,6 @@ function menu(){
 
 window.onload = function(){
     menu();
+    area_setor(".btemail",".emails-cad");
     chartsAreas();
 }

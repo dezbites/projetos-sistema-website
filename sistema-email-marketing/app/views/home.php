@@ -73,23 +73,22 @@
                     <input type="button" class="btemail" area-setor="importar email" input-verde style="width:120px;" value=" importar emails ">
                     <div id="modo-email" align="center">
                         <h1>
-                          Cadastrar emails
+                          Novos cadastros
                         </h1>
                         <p>
-                          Selecione a forma que deseja cadastrar seus emails
+                          selecione o melhor modo para cadastrar seus emails
                         </p>
-                        <div class="emails-cad" area-setor="novo email">
-                            <form action="" method="post">
-                                <input type="email" name="" id="" placeholder=" cadastre seu email ">
-                                <input type="submit" value=" Cadastrar ">
-                            </form>
-                        </div>
-                        <div class="emails-cad" area-setor="importar email">
-                            <form action="" method="post">
-                                <input type="file" name="" id="">
-                                <input type="submit" value=" importar emails ">
-                            </form>
-                        </div>
+                        <form action="" enctype="" method="post">
+                            <div class="emails-cad" area-setor="novo email">
+                                    <input type="email" name="" id="" placeholder=" cadastre seu email ">
+                                    <input type="submit" value=" Cadastrar ">
+                                </form>
+                            </div>
+                            <div class="emails-cad" area-setor="importar email">
+                                    <input type="file" name="" id="">
+                                    <input type="submit" value=" importar emails ">
+                            </div>
+                        </form>
                     </div>
                 </div>
           </div>
