@@ -69,15 +69,27 @@
       <div class="cadastrar-emails menu" data-secao="Cadastrar emails">
           <div class="arquivos">
                 <div>
-                    <input type="button" style="width:120px;" value=" novo email ">
-                    <input type="button" input-verde style="width:120px;" value=" importar emails ">
-                    <div align="center">
+                    <input type="button" class="btemail" area-setor="novo email" style="width:120px;" value=" novo email ">
+                    <input type="button" class="btemail" area-setor="importar email" input-verde style="width:120px;" value=" importar emails ">
+                    <div id="modo-email" align="center">
                         <h1>
                           Cadastrar emails
                         </h1>
                         <p>
                           Selecione a forma que deseja cadastrar seus emails
                         </p>
+                        <div class="emails-cad" area-setor="novo email">
+                            <form action="" method="post">
+                                <input type="email" name="" id="" placeholder=" cadastre seu email ">
+                                <input type="submit" value=" Cadastrar ">
+                            </form>
+                        </div>
+                        <div class="emails-cad" area-setor="importar email">
+                            <form action="" method="post">
+                                <input type="file" name="" id="">
+                                <input type="submit" value=" importar emails ">
+                            </form>
+                        </div>
                     </div>
                 </div>
           </div>

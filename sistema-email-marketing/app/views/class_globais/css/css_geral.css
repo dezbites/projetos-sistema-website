@@ -100,6 +100,25 @@ input[type=button]:hover{
     cursor:pointer;
     background-color: #5CC1BD;
 }
+input[type=submit]{
+    padding: 10px;
+    width: 20%;
+    background-color: #A4D4C9;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+}
+input[type=submit]:hover{
+    cursor:pointer;
+    background-color: #5CC1BD;
+}
+input[type=text],input[type=email]{
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    width: 250px;
+    padding: 10px;
+}
 [input-verde]{
     padding: 10px;
     width: 20%;
@@ -162,6 +181,9 @@ input[type=button]:hover{
     height: 89vh;
     display: grid;
     text-align: left;
+}
+.corpo .emails-cad{
+    display: none;
 }
 /* 
 .corpo .menu .arquivos div img{
