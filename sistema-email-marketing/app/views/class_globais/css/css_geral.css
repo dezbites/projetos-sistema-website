@@ -121,6 +121,8 @@ input[type=text],input[type=email]{
     width: 250px;
     padding: 10px;
     outline: none;
+    color: rgb(67, 68, 68);
+    font-size: 14px;
 }
 [input-verde]{
     padding: 10px;
