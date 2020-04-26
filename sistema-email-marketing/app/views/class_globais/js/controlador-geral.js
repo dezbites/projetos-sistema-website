@@ -94,18 +94,19 @@ var grafic = (obj,endQt) =>{
 
 //Cadastrar emails
 function area_setor(areainp,saidaout,fun){
-      var cadEmail = document.querySelectorAll(saidaout);
+      var cadEmail = document.querySelector(saidaout);
     const btEmail  = document.querySelectorAll(areainp);
+    const sub      = document.querySelector("#area-email-titulo");
     if(fun == undefined && fun == null ){ fun == ''; }
     for(i in btEmail){
         btEmail[i].onclick=function(){
-            for(let t=0;t<cadEmail.length; t++){
-                if(cadEmail[t].getAttribute("area-setor") === this.getAttribute("area-setor")){
-                    cadEmail[t].style.display = "block";
+                if(this.getAttribute("area-setor") === "novo email"){
+                   cadEmail.setAttribute("type","email");
+                   sub.value = "Cadastrar email";
                 }else{
-                    cadEmail[t].style.display = "none";
+                   cadEmail.setAttribute("type","file");
+                   sub.value = "Importar";
                 }
-            }
 
             if(typeof fun == "function"){
                 fun();
@@ -147,6 +148,6 @@ function menu(){
 
 window.onload = function(){
     menu();
-    area_setor(".btemail",".emails-cad");
+    area_setor(".btemail","#area-email");
     chartsAreas();
 }

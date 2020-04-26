@@ -80,13 +80,8 @@
                         </p>
                         <form action="" enctype="" method="post">
                             <div class="emails-cad" area-setor="novo email">
-                                    <input type="email" name="" id="" placeholder=" cadastre seu email ">
-                                    <input type="submit" value=" Cadastrar ">
-                                </form>
-                            </div>
-                            <div class="emails-cad" area-setor="importar email">
-                                    <input type="file" name="" id="">
-                                    <input type="submit" value=" importar emails ">
+                                    <input type="email" name="" id="area-email" placeholder=" cadastre seu email ">
+                                    <input type="submit" id="area-email-titulo" value=" Cadastrar ">
                             </div>
                         </form>
                     </div>
