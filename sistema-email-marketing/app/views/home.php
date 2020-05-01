@@ -87,11 +87,11 @@
                 </div>
           </div>
       </div>
-      <div class="enviar-emails menu" data-secao="Enviar emails">
-          Enviar emails
-      </div>
       <div class="templante menu" data-secao="Templante">
           Templante
+      </div>
+      <div class="enviar-emails menu" data-secao="Enviar emails">
+          Enviar emails
       </div>
       <div class="captura-emails menu" data-secao="Captura de emails">
       Captura de emails
