@@ -4,6 +4,8 @@ body{
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F2F2F2;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .foguete svg, .foguete img{
     animation: foguete .8s normal;
@@ -119,6 +121,9 @@ input[type=text],input[type=email]{
     background-color: #f4f4f4;
     width: 250px;
     padding: 10px;
+    outline: none;
+    color: rgb(67, 68, 68);
+    font-size: 14px;
 }
 [input-verde]{
     padding: 10px;
@@ -182,9 +187,10 @@ input[type=text],input[type=email]{
     height: 89vh;
     display: grid;
     text-align: left;
+    padding-left: 10px;
 }
 .corpo .emails-cad{
-    display: none;
+    display: block;
 }
 /* 
 .corpo .menu .arquivos div img{
