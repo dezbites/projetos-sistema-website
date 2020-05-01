@@ -1,6 +1,6 @@
 const _ = {
-    ajaxEnvio:function(met,forma,links,saida){
-        document.querySelector(forma).onsubmit = function(){
+    ajaxEnvio:function(met,formulario,links,saida){
+        document.querySelector(formulario).onsubmit = function(){
             var formsrg = new FormData(this);
             var httpaj = new XMLHttpRequest();
             httpaj.onreadystatechange = function(){

@@ -114,7 +114,6 @@ function area_setor(areainp,saidaout,fun){
     }
 }
 
-
 //Menu
 function menu(){
     const qtmmenu    = document.querySelectorAll(".lateral a");
@@ -142,8 +141,6 @@ function menu(){
         }
     }
 }
-
-
 
 window.onload = function(){
     menu();

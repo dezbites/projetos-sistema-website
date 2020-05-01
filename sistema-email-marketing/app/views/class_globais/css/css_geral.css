@@ -113,6 +113,7 @@ input[type=submit]:hover{
     background-color: #5CC1BD;
 }
 input[type=text],input[type=email]{
+    outline: none;
     border: 2px solid rgba(0, 0, 0, 0.02);
     border-radius: 4px;
     background-color: #f4f4f4;

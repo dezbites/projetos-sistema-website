@@ -82,7 +82,6 @@
                             <div class="emails-cad" area-setor="novo email">
                                     <input type="email" name="" id="" placeholder=" cadastre seu email ">
                                     <input type="submit" value=" Cadastrar ">
-                                </form>
                             </div>
                             <div class="emails-cad" area-setor="importar email">
                                     <input type="file" name="" id="">
