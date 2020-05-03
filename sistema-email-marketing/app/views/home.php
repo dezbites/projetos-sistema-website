@@ -28,8 +28,8 @@
     <div class="lateral">
         <a data-menu="home" target="_self"><div><img src="app/views/imgs/house.png" />Dashboard</div></a>
         <a data-menu="cadastrar-emails" target="_self"><div><img src="app/views/imgs/email.png" />Cadastrar Emails</div></a>
-        <a data-menu="enviar-emails" target="_self"><div><img src="app/views/imgs/send-email.png" />Enviar Emails</div></a>
         <a data-menu="templante" target="_self"><div><img src="app/views/imgs/code-design.png" />Templante</div></a>
+        <a data-menu="enviar-emails" target="_self"><div><img src="app/views/imgs/send-email.png" />Enviar Emails</div></a>
         <a data-menu="captura-emails" target="_self"><div><img src="app/views/imgs/capturar.png" />Capturar Emails</div></a>
     </div>
     <div class="corpo">
@@ -83,6 +83,8 @@
                                     <input type="submit" id="area-email-titulo" value=" Cadastrar ">
                             </div>
                         </form>
+                        <div id="exibir-dados">
+                        </div>
                     </div>
                 </div>
           </div>

@@ -50,7 +50,7 @@ const _ = {
         }
         ajaxx.open("POST",link,true);
         ajaxx.send(formvl); 
-    },
+    },testes:function(){ alert(123); },
     get:function(url,func,saida){
         var loadding = document.createElement("div");
         loadding.className="carregar";
