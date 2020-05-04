@@ -3,7 +3,7 @@
 <head>
 <?php
   require_once("autoload.php");
-  //require_once("class_globais/design_material.class.php");
+  require_once("app/views/class_globais/globais.class.php");
   $design_tre = new design_material();
   $scriptJs   = new interation_sistema();
 
@@ -77,9 +77,9 @@
                         <p>
                           selecione o melhor modo para cadastrar seus emails
                         </p>
-                        <form action="" enctype="" method="post">
+                        <form id="formemail" enctype="multipart/form-data" method="post">
                             <div class="emails-cad" area-setor="novo email">
-                                    <input type="email" name="" id="area-email" placeholder=" cadastre seu email ">
+                                    <input type="email" name="email" id="area-email" placeholder=" cadastre seu email ">
                                     <input type="submit" id="area-email-titulo" value=" Cadastrar ">
                             </div>
                         </form>

@@ -1,5 +1,6 @@
 const _ = {
     ajaxEnvio:function(met,formulario,links,saida){
+        
         document.querySelector(formulario).onsubmit = function(){
             var formsrg = new FormData(this);
             var httpaj = new XMLHttpRequest();
