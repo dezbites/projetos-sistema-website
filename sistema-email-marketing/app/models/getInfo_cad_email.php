@@ -1,7 +1,7 @@
 <?php
 
 if($_FILES){
-    echo "  Arquivo";
+    echo "Arquivo";
 }else{
     echo "Tipo Texto";
 }
