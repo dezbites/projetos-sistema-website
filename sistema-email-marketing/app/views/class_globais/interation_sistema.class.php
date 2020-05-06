@@ -11,7 +11,7 @@ class interation_sistema{
             
 <script>
    
-      /* var openFile = function(event) {
+       /* var openFile = function(event) {
             var input = event.target;
 
             var reader = new FileReader();
@@ -28,11 +28,25 @@ class interation_sistema{
 
         function openviewFile(event){
             var fileinp = event.target;
-            var ler = new FileReader();
-            ler.onload = function(){
-                document.querySelector("#exibir-dados").innerHTML = ler.result;
-            }
-            ler.readAsText(fileinp.files[0]);
+            const extensao = ["text/plain"];
+            //for(let i=0;i<extensao.length;i++){
+
+                if(fileinp.files[0].type == extensao[0]){
+                    var ler = new FileReader();
+                    document.querySelector("#exibir-dados").innerHTML="carregando...";
+                    ler.onload = function(){
+                        const exp = /\n/g;
+                        var textotrado = new String(ler.result);
+                        var subst = textotrado.replace(exp,"<br>").split("<br>");
+                        document.querySelector("#exibir-dados").innerHTML = subst.length;
+                    }
+                    ler.readAsText(fileinp.files[0]);
+                    return;
+                }else{
+                    file.value="";
+                    not.cautions("Desculpe mais só é permitido o tipo de arquivo txt!");
+                }
+            //}
         }
     _.ajaxEnvio("post","#formemail","<?php echo PATH_MODELS.'/getInfo_cad_email.php'?>","#exibir-dados");
 </script>
