@@ -146,8 +146,8 @@
     $scriptJs::interation_js([
       "app/views/class_globais/js/dbites-ajax.js",
       "app/views/class_globais/js/dbites-alerts.js",
-      "app/views/class_globais/js/dbites-window.js",
-      "app/views/class_globais/js/controlador-geral.js"
+      "app/views/class_globais/js/controlador-geral.js",
+      "app/views/class_globais/js/dbites-window.js"
     ]);
   ?>
 </body>
