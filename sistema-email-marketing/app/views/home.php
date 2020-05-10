@@ -140,6 +140,8 @@
       </div>
     </div>
   </div>
+  <div class="dbites-window" dbites-title="Cadastro de emails">
+  </div>
   <?php
     $scriptJs::interation_js([
       "app/views/class_globais/js/dbites-ajax.js",

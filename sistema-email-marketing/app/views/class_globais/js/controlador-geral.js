@@ -143,8 +143,32 @@ function menu(){
     }
 }
 
-window.onload = function(){
-    menu();
-    area_setor(".btemail","#area-email");
-    chartsAreas();
+// Evento para o input file
+
+const file = document.querySelector("#area-email");
+file.onchange = function(){
+    openviewFile(event);
+}
+function openviewFile(event){
+    
+    var fileinp = event.target;
+    const extensao = ["text/plain"];
+    //for(let i=0;i<extensao.length;i++){
+
+        if(fileinp.files[0].type == extensao[0]){
+            var ler = new FileReader();
+            document.querySelector("#exibir-dados").innerHTML="carregando...";
+            ler.onload = function(){
+                const exp = /\n/g;
+                var textotrado = new String(ler.result);
+                var subst = textotrado.replace(exp,"<br>").split("<br>");
+                document.querySelector("#exibir-dados").innerHTML = subst.length;
+            }
+            ler.readAsText(fileinp.files[0]);
+            return;
+        }else{
+            file.value="";
+            not.cautions("Desculpe mais só é permitido o tipo de arquivo txt!");
+        }
+    //}
 }
