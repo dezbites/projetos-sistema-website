@@ -10,18 +10,7 @@ class interation_sistema{
 ?>
             
 <script>
-   
-       /* var openFile = function(event) {
-            var input = event.target;
-
-            var reader = new FileReader();
-            reader.onload = function(){
-                var text = reader.result;
-                console.log(reader.result);
-            };
-            reader.readAsText(input.files[0]);
-        }; */
-        window.onload=function(){
+           window.onload=function(){
             
             menu();
             area_setor(".btemail","#area-email");
