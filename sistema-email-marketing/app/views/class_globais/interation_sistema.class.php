@@ -26,7 +26,7 @@ class interation_sistema{
             menu();
             area_setor(".btemail","#area-email");
             chartsAreas();
-            janela(`
+            wind(`
                 Jonas gomes da silva<br><table border='1'><tr><td>Jonas</td><td>gomes</td></tr></table>
             `);
 
