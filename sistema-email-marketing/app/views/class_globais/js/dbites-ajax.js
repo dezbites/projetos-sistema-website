@@ -1,7 +1,7 @@
 const _ = {
-    ajaxEnvio:function(met,formulario,links,saida){
+    ajaxEnvio:function(met,links,saida){
         
-        document.querySelector(formulario).onsubmit = function(){
+        //document.querySelector(formulario).onsubmit = function(){
             var formsrg = new FormData(this);
             var httpaj = new XMLHttpRequest();
             httpaj.onreadystatechange = function(){
@@ -10,16 +10,17 @@ const _ = {
                         if( typeof saida === "function" ){
                             saida();
                         }else{
-                            document.querySelector(saida).innerHTML = httpaj.responseText;
+                            return httpaj.responseText;
                         }
                     }
-                }
+                }else{ console.error("Erro de comunicação!"); }
             }
             httpaj.open(met,links,true);
             httpaj.send(formsrg);
     
-            return false;
-        }
+            //return false;
+        //}
+
     },
     post:function(link,po,saida){
         if( po === undefined && po === null ){

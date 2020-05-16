@@ -17,8 +17,13 @@ class interation_sistema{
             wind(`
                 Jonas gomes da silva<br><table border='1'><tr><td>Jonas</td><td>gomes</td></tr></table>
             `);
-
-            _.ajaxEnvio("post","#formemail","<?php echo PATH_MODELS.'/getInfo_cad_email.php'?>","#exibir-dados");
+            document.querySelector("#formemail").onsubmit=function(){
+                _.ajaxEnvio("post","<?php echo PATH_MODELS.'/getInfo_cad_email.php'?>",function(){
+                    alert(1);
+                });
+                
+                return false;
+            }
         }
 </script>
  
