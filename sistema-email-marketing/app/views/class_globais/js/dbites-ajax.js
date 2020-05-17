@@ -1,26 +1,25 @@
 const _ = {
-    ajaxEnvio:function(met,links,saida){
-        
-        //document.querySelector(formulario).onsubmit = function(){
+    ajaxEnvio:function(obje){
+        document.querySelector("form").onsubmit = function(){
             var formsrg = new FormData(this);
-            var httpaj = new XMLHttpRequest();
+            var httpaj  = new XMLHttpRequest();
             httpaj.onreadystatechange = function(){
                 if(httpaj.readyState == 4 && httpaj.status == 200){
-                    if( saida ){
-                        if( typeof saida === "function" ){
-                            saida();
+                    if( obje.out ){
+                        if( typeof obje.out === "function" ){
+                            obje.out();
                         }else{
-                            return httpaj.responseText;
+                            obje.dados = httpaj.responseText;
+                            obje.func();
                         }
-                    }
-                }else{ console.error("Erro de comunicação!"); }
+                    }else{ obje.dados = httpaj.responseText; obje.func(); }
+                }else{ console.error("Erro de comunicação :("); }
             }
-            httpaj.open(met,links,true);
+            httpaj.open(obje.met,obje.url,true);
             httpaj.send(formsrg);
     
-            //return false;
-        //}
-
+            return false;
+        }
     },
     post:function(link,po,saida){
         if( po === undefined && po === null ){

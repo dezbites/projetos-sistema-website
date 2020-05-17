@@ -14,16 +14,13 @@ class interation_sistema{
             menu();
             area_setor(".btemail","#area-email");
             chartsAreas();
-            wind(`
-                Jonas gomes da silva<br><table border='1'><tr><td>Jonas</td><td>gomes</td></tr></table>
-            `);
-            document.querySelector("#formemail").onsubmit=function(){
-                _.ajaxEnvio("post","<?php echo PATH_MODELS.'/getInfo_cad_email.php'?>",function(){
-                    alert(1);
-                });
-                
-                return false;
-            }
+            _.ajaxEnvio({
+                met:"post",
+                url:"<?php echo PATH_MODELS.'/getInfo_cad_email.php'?>",
+                func:function(){
+                    alert(this.dados);
+                }
+            });
         }
 </script>
  
