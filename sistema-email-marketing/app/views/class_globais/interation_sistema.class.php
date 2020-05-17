@@ -18,7 +18,7 @@ class interation_sistema{
                 met:"post",
                 url:"<?php echo PATH_MODELS.'/getInfo_cad_email.php'?>",
                 func:function(){
-                    alert(this.dados);
+                    wind(this.dados);
                 }
             });
         }

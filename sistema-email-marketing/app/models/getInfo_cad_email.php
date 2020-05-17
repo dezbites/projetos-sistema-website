@@ -1,7 +1,8 @@
 <?php
 
 if($_FILES){
-    echo "Arquivo jonas é lindo";
+
+   echo file_get_contents($_FILES['email']['tmp_name']);
 }else{
     echo "Tipo Texto";
 }

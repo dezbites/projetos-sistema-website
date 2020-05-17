@@ -79,7 +79,7 @@
                         </p>
                         <form id="formemail" enctype="multipart/form-data">
                             <div class="emails-cad" area-setor="novo email">
-                                    <input type="file" name="email" id="area-email" placeholder=" cadastre seu email ">
+                                    <input type="email" name="email" id="area-email" placeholder=" cadastre seu email ">
                                     <input type="submit" id="area-email-titulo" value=" Cadastrar ">
                             </div>
                         </form>
