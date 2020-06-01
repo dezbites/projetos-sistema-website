@@ -18,7 +18,11 @@ class interation_sistema{
                 met:"post",
                 url:"<?php echo PATH_MODELS.'/getInfo_cad_email.php'?>",
                 func:function(){
-                    wind(this.dados);
+                    if( this.dados == 1 ){
+                        not.cautions("Arquivo excede o tamanho maximo permitido de 10mb!");
+                    }else{
+                        wind(this.dados);
+                    }
                 }
             });
         }

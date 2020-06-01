@@ -39,7 +39,7 @@ class conexao_bd{
 
     //Consulta na base de dados
     public function DBquery($consult){
-        $link   = $this->DBconectar();
+        //$link   = $this->DBconectar();
         $result = @mysqli_query($link,$consult);
         return $result;
         //$link->DBsair();
